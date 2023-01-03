@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaida - urdu</title>
+    <link rel="icon" type="image/x-icon" href="../icon.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="header">
+            <div id="inputContainer">
+                <input type="text" id="mainInput" placeholder="یہاں لکھیں">
+                <label for="mainInput">Type an urdu word or select a letter set from below;</label>
+            </div>
+            <details open>
+                <summary>Letter Sets</summary>
+            <div class="detailsExtended">
+                <div class="filtersGroup">
+                        <div class="filterHeading">Similar in writing</div>
+                        <div class="filter">اآ ل</div>
+                        <div class="filter">ب ی پ ہ</div>
+                        <div class="filter">ن ت ث ٹ</div>
+                        <div class="filter">ج چ ح خ</div>
+                        <div class="filter">د ر ڈ ڑ ذ ز</div>
+                        <div class="filter">س ش</div>
+                        <div class="filter"> ط ص ظ ض ھ</div>
+                        <div class="filter">ع غ ء</div>
+                        <div class="filter">ف ق م و</div>
+                        <div class="filter">ک گ</div>
+                </div>
+                <div class="filtersGroup">
+                    <div class="filterHeading">Similar in sound</div>
+                    <div class="filter">اآع ی ے ء و</div>
+                    <div class="filter">ب پ</div>
+                    <div class="filter">ت ٹ ط</div>
+                    <div class="filter">ث ژ س ص ش</div>
+                    <div class="filter">ح ہ ھ</div>
+                    <div class="filter">د ڈ</div>
+                    <div class="filter">ذ ز ض ظ</div>
+                    <div class="filter">ر ڑ</div>
+                    <div class="filter">ق ک گ غ</div>
+                </div>
+                <div class="filtersGroup">
+                    <div class="filterHeading">All urdu Letters</div>
+                    <div class="filter">ا آ ب پ ت ٹ ث ج چ ح خ دڈذرڑزژس ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ہ ھ ء ی ے</div>
+                </div>
+            </div>
+             </details>
+    </div>
+    <div id="chekboxesContainer">
+        <div>
+            <input type="checkbox" id="fullLetters"> <label for="fullLetters">Full Letters</label>
+        </div>
+        <div>
+            <input type="checkbox" id="halfLetters" checked> <label for="halfLetters">Half Letters</label>
+        </div>
+    </div>
+
+    <div id="main">
+    </div>
+    
+<script src="script.js"> </script>
+</body>
+</html>
