@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LineReader</title>
+  <link rel="icon" href="icon-192x192.png" type="image/png">
+  <meta name="description" content="A tool for children with vision impairment, displaying text in a single line, it eliminates the need for zooming in and out again and again.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><a href="./index.html" class="logo">LineReader</a></h1>
+    <p>LineReader is a tool for children with vision impairment, displaying text in a single line, it eliminates the need for zooming in and out again and again. Put your phone to landscape oreantation and give it a try!
+    </p>
+    <h2><a class="button" href="./read.html">Start Reading</a></h2>
+    <div id="exampleTexts">
+      <h3>You can try this tool by reading some of these example texts</h3>
+  <script src="examples.js"></script>
+  <script src="index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+    .then(registration => {
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, error => {
+    console.log('ServiceWorker registration failed: ', error);
+    });
+    });
+    }
+  </script>
+  </body>
+</html>
